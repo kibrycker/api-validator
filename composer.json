@@ -1,0 +1,42 @@
+{
+  "name": "kibrycker/api-validator",
+  "description": "Модуль для проверки корректности семантической разметки страницы",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "type": "yii2-extension",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "kibrycker",
+      "email": "kibrycker@google.com"
+    }
+  ],
+  "require": {
+    "php": "~7.4 || ~8.0",
+    "yiisoft/yii2": "~2.0.0",
+    "guzzlehttp/guzzle": "^6.0",
+    "cranetm/yii2-json-rpc-2.0": "~1.2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~9.5.0",
+    "yiisoft/yii2-debug": "~2.0",
+    "yiisoft/yii2-gii": "~2.0",
+    "yiisoft/yii2-faker": "~2.0",
+    "roave/security-advisories": "dev-latest"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "kibrycker\\api\\validator\\": "src"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
